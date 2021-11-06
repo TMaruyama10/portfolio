@@ -1,0 +1,109 @@
+/* line 3, ../sass/nav.scss */
+header {
+  position: relative;
+  width: 100%;
+}
+
+/* line 8, ../sass/nav.scss */
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 999;
+}
+
+/* line 21, ../sass/nav.scss */
+.logo {
+  width: 300px;
+  height: auto;
+  padding: 10px 50px;
+}
+/* line 26, ../sass/nav.scss */
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* Bar icon */
+/* line 37, ../sass/nav.scss */
+.bar-icon {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* line 45, ../sass/nav.scss */
+.bar-icon span {
+  width: 40px;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  transition: 0.5s;
+  transform: translateX(-50%);
+}
+/* line 53, ../sass/nav.scss */
+.bar-icon span:nth-child(1) {
+  top: 30%;
+  left: 50%;
+  background-color: #fff;
+}
+/* line 59, ../sass/nav.scss */
+.bar-icon span:nth-child(2) {
+  bottom: 47%;
+  left: 50%;
+  background-color: #fff;
+}
+/* line 65, ../sass/nav.scss */
+.bar-icon span:nth-child(3) {
+  bottom: 30%;
+  left: 50%;
+  background-color: #fff;
+}
+/* line 73, ../sass/nav.scss */
+.bar-icon.active span:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  width: 62%;
+  transform: translate(-50%, -50%) rotate(135deg);
+  background: var(--color1);
+}
+/* line 81, ../sass/nav.scss */
+.bar-icon.active span:nth-child(2) {
+  width: 0;
+  transition: 0.5s;
+}
+/* line 86, ../sass/nav.scss */
+.bar-icon.active span:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  width: 62%;
+  transform: translate(-50%, -50%) rotate(220deg);
+  background: var(--color1);
+}
+/* line 95, ../sass/nav.scss */
+.bar-icon.active:before {
+  width: 0;
+  height: 0;
+}
+/* line 102, ../sass/nav.scss */
+.bar-icon:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%, -50%);
+  width: 40px;
+  height: 4px;
+  transition: 0.5s;
+}

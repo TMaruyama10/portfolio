@@ -1,0 +1,214 @@
+/* line 2, ../sass/founders.scss */
+.founders {
+  position: relative;
+  margin-top: 150px;
+  width: 100%;
+  height: 100vh;
+}
+/* line 8, ../sass/founders.scss */
+.founders > h2 {
+  position: absolute;
+  top: 20px;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+}
+/* line 20, ../sass/founders.scss */
+.founders__content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+/* line 25, ../sass/founders.scss */
+.founders__content__clara {
+  position: relative;
+  flex-grow: 1;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #9e579d;
+  cursor: pointer;
+}
+/* line 36, ../sass/founders.scss */
+.founders__content__clara:hover {
+  flex-grow: 5;
+}
+/* line 40, ../sass/founders.scss */
+.founders__content__clara .card {
+  max-width: 300px;
+  text-align: center;
+  transition: 0.5s;
+}
+/* line 45, ../sass/founders.scss */
+.founders__content__clara .card .clara-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 52, ../sass/founders.scss */
+.founders__content__clara .card .clara-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* line 61, ../sass/founders.scss */
+.founders__content__clara .card h2 {
+  margin: 30px 0;
+  color: #fff;
+  font-weight: 300;
+}
+/* line 67, ../sass/founders.scss */
+.founders__content__clara .card > a {
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+/* line 80, ../sass/founders.scss */
+.founders__content__clara .card > a:hover {
+  background: #F2F5E3;
+  border: 1px solid var(--color1);
+  color: var(--color);
+}
+/* line 89, ../sass/founders.scss */
+.founders__content__alex {
+  position: relative;
+  flex-grow: 1;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #605A9E;
+  cursor: pointer;
+}
+/* line 100, ../sass/founders.scss */
+.founders__content__alex:hover {
+  flex-grow: 5;
+}
+/* line 104, ../sass/founders.scss */
+.founders__content__alex .card {
+  max-width: 300px;
+  text-align: center;
+  transition: 0.5s;
+}
+/* line 109, ../sass/founders.scss */
+.founders__content__alex .card .alex-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 116, ../sass/founders.scss */
+.founders__content__alex .card .alex-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* line 125, ../sass/founders.scss */
+.founders__content__alex .card h2 {
+  margin: 30px 0;
+  color: #fff;
+  font-weight: 300;
+}
+/* line 131, ../sass/founders.scss */
+.founders__content__alex .card > a {
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+/* line 144, ../sass/founders.scss */
+.founders__content__alex .card > a:hover {
+  background: #F2F5E3;
+  border: 1px solid var(--color1);
+  color: var(--color1);
+}
+/* line 153, ../sass/founders.scss */
+.founders__content__jim {
+  position: relative;
+  flex-grow: 1;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #F697B2;
+  cursor: pointer;
+}
+/* line 164, ../sass/founders.scss */
+.founders__content__jim:hover {
+  flex-grow: 5;
+}
+/* line 168, ../sass/founders.scss */
+.founders__content__jim .card {
+  max-width: 300px;
+  text-align: center;
+  transition: 0.5s;
+}
+/* line 173, ../sass/founders.scss */
+.founders__content__jim .card .jim-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 180, ../sass/founders.scss */
+.founders__content__jim .card .jim-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* line 189, ../sass/founders.scss */
+.founders__content__jim .card h2 {
+  margin: 30px 0;
+  color: #fff;
+  font-weight: 300;
+}
+/* line 195, ../sass/founders.scss */
+.founders__content__jim .card > a {
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+/* line 208, ../sass/founders.scss */
+.founders__content__jim .card > a:hover {
+  background: #F2F5E3;
+  border: 1px solid var(--color1);
+  color: var(--color1);
+}

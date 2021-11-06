@@ -1,0 +1,75 @@
+/* line 2, ../sass/aboutus.scss */
+.about-us {
+  width: 100%;
+  padding: 50px;
+  margin-top: 100px;
+}
+/* line 7, ../sass/aboutus.scss */
+.about-us .left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+/* line 14, ../sass/aboutus.scss */
+.about-us .right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+/* line 20, ../sass/aboutus.scss */
+.about-us .info {
+  width: 70%;
+  padding: 0px 30px;
+}
+/* line 24, ../sass/aboutus.scss */
+.about-us .info h2 {
+  margin: 15px;
+  font-size: 30px;
+  color: var(--color2);
+}
+/* line 30, ../sass/aboutus.scss */
+.about-us .info p {
+  font-size: 17px;
+  color: var(--color1);
+  line-height: 27px;
+}
+/* line 37, ../sass/aboutus.scss */
+.about-us .about-img {
+  width: 40%;
+  height: 40%;
+}
+/* line 41, ../sass/aboutus.scss */
+.about-us .about-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* line 50, ../sass/aboutus.scss */
+.read-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* line 55, ../sass/aboutus.scss */
+.read-more > a {
+  width: 200px;
+  height: 50px;
+  background: #fff;
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+  padding: 12px;
+}
+/* line 68, ../sass/aboutus.scss */
+.read-more > a:hover {
+  background: var(--color2);
+  color: #fff;
+  border: 1px solid;
+}

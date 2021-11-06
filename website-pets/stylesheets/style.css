@@ -1,0 +1,830 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+/* line 3, ../sass/nav.scss */
+header {
+  position: relative;
+  width: 100%;
+}
+
+/* line 8, ../sass/nav.scss */
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: transparent;
+  z-index: 999;
+}
+
+/* line 21, ../sass/nav.scss */
+.logo {
+  width: 300px;
+  height: auto;
+  padding: 10px 50px;
+}
+/* line 26, ../sass/nav.scss */
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  background-color: #fff;
+}
+
+/* Bar icon */
+/* line 37, ../sass/nav.scss */
+.bar-icon {
+  position: relative;
+  width: 70px;
+  height: 70px;
+  margin-right: 50px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+/* line 45, ../sass/nav.scss */
+.bar-icon span {
+  width: 40px;
+  height: 4px;
+  background-color: #fff;
+  position: absolute;
+  transition: 0.5s;
+  transform: translateX(-50%);
+}
+/* line 53, ../sass/nav.scss */
+.bar-icon span:nth-child(1) {
+  top: 30%;
+  left: 50%;
+  background-color: #fff;
+}
+/* line 59, ../sass/nav.scss */
+.bar-icon span:nth-child(2) {
+  bottom: 47%;
+  left: 50%;
+  background-color: #fff;
+}
+/* line 65, ../sass/nav.scss */
+.bar-icon span:nth-child(3) {
+  bottom: 30%;
+  left: 50%;
+  background-color: #fff;
+}
+/* line 73, ../sass/nav.scss */
+.bar-icon.active span:nth-child(1) {
+  top: 50%;
+  left: 50%;
+  width: 62%;
+  transform: translate(-50%, -50%) rotate(135deg);
+  background: var(--color1);
+}
+/* line 81, ../sass/nav.scss */
+.bar-icon.active span:nth-child(2) {
+  width: 0;
+  transition: 0.5s;
+}
+/* line 86, ../sass/nav.scss */
+.bar-icon.active span:nth-child(3) {
+  top: 50%;
+  left: 50%;
+  width: 62%;
+  transform: translate(-50%, -50%) rotate(220deg);
+  background: var(--color1);
+}
+/* line 95, ../sass/nav.scss */
+.bar-icon.active:before {
+  width: 0;
+  height: 0;
+}
+/* line 102, ../sass/nav.scss */
+.bar-icon:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%, -50%);
+  width: 40px;
+  height: 4px;
+  transition: 0.5s;
+}
+
+/* line 2, ../sass/aboutus.scss */
+.about-us {
+  width: 100%;
+  padding: 50px;
+  margin-top: 100px;
+}
+/* line 7, ../sass/aboutus.scss */
+.about-us .left {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 70px;
+}
+/* line 14, ../sass/aboutus.scss */
+.about-us .right {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+/* line 20, ../sass/aboutus.scss */
+.about-us .info {
+  width: 70%;
+  padding: 0px 30px;
+}
+/* line 24, ../sass/aboutus.scss */
+.about-us .info h2 {
+  margin: 15px;
+  font-size: 30px;
+  color: var(--color2);
+}
+/* line 30, ../sass/aboutus.scss */
+.about-us .info p {
+  font-size: 17px;
+  color: var(--color1);
+  line-height: 27px;
+}
+/* line 37, ../sass/aboutus.scss */
+.about-us .about-img {
+  width: 40%;
+  height: 40%;
+}
+/* line 41, ../sass/aboutus.scss */
+.about-us .about-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  object-fit: cover;
+}
+
+/* line 50, ../sass/aboutus.scss */
+.read-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+/* line 55, ../sass/aboutus.scss */
+.read-more > a {
+  width: 200px;
+  height: 50px;
+  background: #fff;
+  text-decoration: none;
+  color: var(--color1);
+  font-size: 20px;
+  text-align: center;
+  transition: 0.3s ease-in-out;
+  border: 1px solid var(--color1);
+  border-radius: 10px;
+  padding: 12px;
+}
+/* line 68, ../sass/aboutus.scss */
+.read-more > a:hover {
+  background: var(--color2);
+  color: #fff;
+  border: 1px solid;
+}
+
+/* line 2, ../sass/ourpets.scss */
+.team-pets {
+  width: 100%;
+  padding: 50px 0px;
+  background: #fff;
+}
+/* line 7, ../sass/ourpets.scss */
+.team-pets h2 {
+  font-size: 50px;
+  display: flex;
+  justify-content: center;
+  margin: 50px 0px;
+  color: var(--color2);
+  font-weight: 300px;
+}
+
+/* line 18, ../sass/ourpets.scss */
+.content-card {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/* line 25, ../sass/ourpets.scss */
+.content-card .card {
+  position: relative;
+  width: 300px;
+  height: 300px;
+  background: #000;
+  margin: 20px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+/* line 34, ../sass/ourpets.scss */
+.content-card .card__content {
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+}
+/* line 50, ../sass/ourpets.scss */
+.content-card .card__content h4 {
+  color: #fff;
+  margin: 20px 0px;
+  font-size: 17px;
+}
+/* line 56, ../sass/ourpets.scss */
+.content-card .card__content p {
+  font-style: 17px;
+  color: #fff;
+  margin: 20px 0px;
+}
+/* line 63, ../sass/ourpets.scss */
+.content-card .card img {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: 0.5s;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%, 0 50%);
+}
+/* line 75, ../sass/ourpets.scss */
+.content-card .card:hover img {
+  clip-path: polygon(100% 0, 100% 0, 100% 100%, 100% 100%, 100% 50%);
+}
+
+/* line 2, ../sass/founders.scss */
+.founders {
+  position: relative;
+  margin-top: 150px;
+  width: 100%;
+  height: 100vh;
+}
+/* line 8, ../sass/founders.scss */
+.founders > h2 {
+  position: absolute;
+  top: 20px;
+  width: inherit;
+  display: flex;
+  justify-content: center;
+  z-index: 10;
+  font-size: 40px;
+  font-weight: 300;
+  color: #fff;
+}
+/* line 20, ../sass/founders.scss */
+.founders__content {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+/* line 25, ../sass/founders.scss */
+.founders__content__clara {
+  position: relative;
+  flex-grow: 1;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #9e579d;
+  cursor: pointer;
+}
+/* line 36, ../sass/founders.scss */
+.founders__content__clara:hover {
+  flex-grow: 5;
+}
+/* line 40, ../sass/founders.scss */
+.founders__content__clara .card {
+  max-width: 300px;
+  text-align: center;
+  transition: 0.5s;
+}
+/* line 45, ../sass/founders.scss */
+.founders__content__clara .card .clara-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 52, ../sass/founders.scss */
+.founders__content__clara .card .clara-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* line 61, ../sass/founders.scss */
+.founders__content__clara .card h2 {
+  margin: 30px 0;
+  color: #fff;
+  font-weight: 300;
+}
+/* line 67, ../sass/founders.scss */
+.founders__content__clara .card > a {
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+/* line 80, ../sass/founders.scss */
+.founders__content__clara .card > a:hover {
+  background: #F2F5E3;
+  border: 1px solid var(--color1);
+  color: var(--color);
+}
+/* line 89, ../sass/founders.scss */
+.founders__content__alex {
+  position: relative;
+  flex-grow: 1;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #605A9E;
+  cursor: pointer;
+}
+/* line 100, ../sass/founders.scss */
+.founders__content__alex:hover {
+  flex-grow: 5;
+}
+/* line 104, ../sass/founders.scss */
+.founders__content__alex .card {
+  max-width: 300px;
+  text-align: center;
+  transition: 0.5s;
+}
+/* line 109, ../sass/founders.scss */
+.founders__content__alex .card .alex-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 116, ../sass/founders.scss */
+.founders__content__alex .card .alex-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* line 125, ../sass/founders.scss */
+.founders__content__alex .card h2 {
+  margin: 30px 0;
+  color: #fff;
+  font-weight: 300;
+}
+/* line 131, ../sass/founders.scss */
+.founders__content__alex .card > a {
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+/* line 144, ../sass/founders.scss */
+.founders__content__alex .card > a:hover {
+  background: #F2F5E3;
+  border: 1px solid var(--color1);
+  color: var(--color1);
+}
+/* line 153, ../sass/founders.scss */
+.founders__content__jim {
+  position: relative;
+  flex-grow: 1;
+  transition: 1s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background: #F697B2;
+  cursor: pointer;
+}
+/* line 164, ../sass/founders.scss */
+.founders__content__jim:hover {
+  flex-grow: 5;
+}
+/* line 168, ../sass/founders.scss */
+.founders__content__jim .card {
+  max-width: 300px;
+  text-align: center;
+  transition: 0.5s;
+}
+/* line 173, ../sass/founders.scss */
+.founders__content__jim .card .jim-img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+/* line 180, ../sass/founders.scss */
+.founders__content__jim .card .jim-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+/* line 189, ../sass/founders.scss */
+.founders__content__jim .card h2 {
+  margin: 30px 0;
+  color: #fff;
+  font-weight: 300;
+}
+/* line 195, ../sass/founders.scss */
+.founders__content__jim .card > a {
+  width: 150px;
+  height: 50px;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid #fff;
+  border-radius: 5px;
+  background: transparent;
+  font-size: 20px;
+  color: #fff;
+  padding: 10px;
+  transition: 0.5s ease-in-out;
+}
+/* line 208, ../sass/founders.scss */
+.founders__content__jim .card > a:hover {
+  background: #F2F5E3;
+  border: 1px solid var(--color1);
+  color: var(--color1);
+}
+
+/* line 2, ../sass/footer.scss */
+footer {
+  background: url(../img/footer.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* line 13, ../sass/footer.scss */
+footer .boxForm {
+  width: auto;
+  height: auto;
+  padding: 50px;
+  background: #303a52;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 10px;
+}
+/* line 24, ../sass/footer.scss */
+footer .boxForm h2 {
+  font-size: 30px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+/* line 32, ../sass/footer.scss */
+footer .boxForm label {
+  color: #fff;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+/* line 38, ../sass/footer.scss */
+footer .boxForm input {
+  margin: 10px 0px 20px 0px;
+  padding: 0px 20px;
+  width: 700px;
+  height: 40px;
+  border-radius: 24px;
+  outline: none;
+  border: 2px solid #fff;
+  font-size: 15px;
+  background: #303a52;
+}
+/* line 49, ../sass/footer.scss */
+footer .boxForm input:focus {
+  background: #fff;
+  color: #000;
+  transition: 0.25s;
+}
+/* line 55, ../sass/footer.scss */
+footer .boxForm input::placeholder {
+  color: #fff;
+}
+/* line 60, ../sass/footer.scss */
+footer .boxForm textarea {
+  width: 700px;
+  height: 120px;
+  margin: 10px 0px 20px 0px;
+  border-radius: 24px;
+  outline: none;
+  border: 2px solid #fc85ae;
+  font-size: 15px;
+  background: #303a52;
+  padding: 10px;
+}
+/* line 71, ../sass/footer.scss */
+footer .boxForm textarea:focus {
+  background: #fff;
+  color: #000;
+  transition: 0.25s;
+}
+/* line 76, ../sass/footer.scss */
+footer .boxForm textarea::placeholder {
+  color: #fff;
+}
+/* line 81, ../sass/footer.scss */
+footer .boxForm #send {
+  width: 120px;
+  height: 50px;
+  border-radius: 24px;
+  outline: none;
+  border: 2px solid #574b90;
+  cursor: pointer;
+  background: #fc85ae;
+  transition: 0.25s;
+}
+/* line 91, ../sass/footer.scss */
+footer .boxForm #send a {
+  text-decoration: none;
+  font-size: 17px;
+  color: #fff;
+  text-transform: uppercase;
+}
+/* line 97, ../sass/footer.scss */
+footer .boxForm #send:hover {
+  border: 2px solid #fff;
+  background: #574b90;
+}
+
+/* line 12, ../sass/style.scss */
+:root {
+  --color1: #252a34;
+  --color2: #9e579d;
+}
+
+/* line 17, ../sass/style.scss */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', san-serif;
+}
+
+/* line 24, ../sass/style.scss */
+body {
+  background-color: #fff;
+}
+
+/* Container List */
+/* line 31, ../sass/style.scss */
+.container-list {
+  position: absolute;
+  top: 70px;
+  left: 0;
+  width: 0%;
+  overflow: hidden;
+  height: 89.4vh;
+  background-color: #f1f4df;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* line 45, ../sass/style.scss */
+.container-list .list:hover li a:before {
+  width: 0%;
+}
+/* line 49, ../sass/style.scss */
+.container-list .list li:hover a:before {
+  width: 100%;
+}
+/* line 53, ../sass/style.scss */
+.container-list .list li {
+  list-style: none;
+  padding: 10px 0px;
+}
+/* line 57, ../sass/style.scss */
+.container-list .list li a {
+  font-size: 2.5em;
+  font-weight: 700;
+  position: relative;
+  text-decoration: none;
+  color: #ddd;
+}
+/* line 64, ../sass/style.scss */
+.container-list .list li a:before {
+  content: attr(data-text);
+  position: absolute;
+  top: -2px;
+  width: 100%;
+  color: #303a52;
+  overflow: hidden;
+  white-space: nowrap;
+  transition: 0.5s ease-in-out;
+}
+
+/* IMG Header */
+/* line 83, ../sass/style.scss */
+.img-header {
+  position: relative;
+  background: url(../img/bike.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 97, ../sass/style.scss */
+.degradade {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+/* line 106, ../sass/style.scss */
+.welcome {
+  position: absolute;
+  padding: 50px;
+  z-index: 10;
+}
+/* line 111, ../sass/style.scss */
+.welcome h1 {
+  color: #fff;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 867px) {
+  /* line 121, ../sass/style.scss */
+  .about-us {
+    padding: 20px;
+  }
+  /* line 124, ../sass/style.scss */
+  .about-us .info h2 {
+    font-size: 25px;
+  }
+  /* line 127, ../sass/style.scss */
+  .about-us .info p {
+    font-size: 16px;
+  }
+
+  /* line 131, ../sass/style.scss */
+  .about-img {
+    width: 50%;
+    height: 500px;
+  }
+
+  /* line 136, ../sass/style.scss */
+  .team-pets h2 {
+    font-size: 40px;
+  }
+
+  /* line 139, ../sass/style.scss */
+  .content-card .card {
+    width: 40%;
+    height: 400px;
+  }
+
+  /* line 143, ../sass/style.scss */
+  .founders {
+    margin-top: 50px;
+    height: 100%;
+  }
+  /* line 147, ../sass/style.scss */
+  .founders__content {
+    display: block;
+  }
+  /* line 150, ../sass/style.scss */
+  .founders__content__clara {
+    padding: 50px 0px;
+    width: 100%;
+  }
+  /* line 154, ../sass/style.scss */
+  .founders__content__alex {
+    padding: 50px 0px;
+    width: 100%;
+  }
+  /* line 158, ../sass/style.scss */
+  .founders__content__jim {
+    padding: 50px 0px;
+    width: 100%;
+  }
+  /* line 163, ../sass/style.scss */
+  .founders h2 {
+    position: static;
+    color: var(--color1);
+    margin-bottom: 20px;
+  }
+
+  /* line 170, ../sass/style.scss */
+  .footer {
+    margin-top: -200px;
+  }
+  /* line 173, ../sass/style.scss */
+  .footer .boxForm {
+    width: 95%;
+  }
+  /* line 176, ../sass/style.scss */
+  .footer .boxForm input {
+    width: 100%;
+  }
+  /* line 179, ../sass/style.scss */
+  .footer .boxForm textarea {
+    width: 100%;
+  }
+  /* line 182, ../sass/style.scss */
+  .footer .boxForm h2 {
+    font-size: 40px;
+  }
+}
+@media only screen and (max-width: 700px) {
+  /* line 190, ../sass/style.scss */
+  .about-img {
+    width: 100%;
+    height: 500px;
+  }
+
+  /* line 195, ../sass/style.scss */
+  .about-us left {
+    width: 100%;
+    display: block;
+  }
+  /* line 199, ../sass/style.scss */
+  .about-us left.info {
+    margin-bottom: 30px;
+  }
+  /* line 203, ../sass/style.scss */
+  .about-us right {
+    width: 100%;
+    display: block;
+  }
+  /* line 207, ../sass/style.scss */
+  .about-us right.info {
+    margin-top: 30px;
+  }
+  /* line 211, ../sass/style.scss */
+  .about-us .info {
+    width: 100%;
+  }
+
+  /* line 215, ../sass/style.scss */
+  .content-card .card {
+    width: 100%;
+    height: 400px;
+  }
+
+  /* line 219, ../sass/style.scss */
+  footer .boxForm {
+    width: 90%;
+  }
+  /* line 222, ../sass/style.scss */
+  footer .boxForm input {
+    height: 50px;
+    width: 100%;
+  }
+  /* line 226, ../sass/style.scss */
+  footer .boxForm textarea {
+    width: 100%;
+  }
+}

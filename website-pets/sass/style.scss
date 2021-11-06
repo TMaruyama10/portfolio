@@ -1,0 +1,237 @@
+/* Welcome to Compass. Use this file to write IE specific override styles.
+ * Import this file using the following HTML or equivalent:
+ * <!--[if IE]>
+ *   <link href="/stylesheets/ie.css" media="screen, projection" rel="stylesheet" type="text/css" />
+ * <![endif]--> */
+ @import 'nav.scss';
+ @import 'aboutus.scss';
+ @import 'ourpets.scss';
+ @import 'founders.scss';
+ @import 'footer.scss';
+
+ :root {
+ 	--color1: #252a34;
+ 	--color2: #9e579d;
+ }
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Montserrat', san-serif;
+}
+
+body {
+	background-color: #fff;
+	//overflow: hidden;
+}
+
+/* Container List */
+
+.container-list {
+	position: absolute;
+	top: 70px;
+	left: 0;
+	width: 0%;
+	overflow: hidden;
+	height: 89.4vh;
+	background-color: #f1f4df;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	& .list {
+
+		&:hover li a:before {
+			width: 0%;
+		}
+
+		& li:hover a:before {
+				width: 100%;
+			}
+
+		& li {
+			list-style: none;
+			padding: 10px 0px;
+
+			& a {
+				font-size: 2.5em;
+				font-weight: 700;
+				position: relative;
+				text-decoration: none;
+				color: #ddd;
+
+				&:before {
+					content: attr(data-text);
+					position: absolute;
+					top: -2px;
+					width: 100%;
+					color:#303a52;
+					overflow: hidden;
+					white-space: nowrap;
+					transition: 0.5s ease-in-out;
+				}
+			}
+		}
+
+	}	
+
+}
+
+/* IMG Header */
+
+.img-header {
+	position: relative;
+	background:url(../img/bike.jpg);
+	background-attachment: fixed;
+	background-position: center;
+	background-size: cover;
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.degradade {
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: rgba(0,0,0,0.5);
+}
+
+.welcome {
+	position: absolute;
+	padding: 50px;
+	z-index: 10;
+
+	& h1 {
+		color: #fff;
+		font-size: 4em;
+		font-weight: 300;
+	}
+}
+
+/* Responsive Design */
+
+@media only screen and (max-width: 867px){
+	.about-us {
+		padding: 20px;
+
+		.info h2 {
+			font-size: 25px;
+		}
+		.info p {
+			font-size: 16px;
+		}
+	}
+	.about-img {
+		width: 50%;
+		height: 500px;
+	}
+
+	.team-pets h2{
+		font-size: 40px;
+	}
+	.content-card .card {
+		width: 40%;
+		height: 400px;
+	}
+	.founders {
+		margin-top: 50px;
+		height: 100%;
+
+		&__content {
+			display: block;
+
+			&__clara {
+				padding: 50px 0px;
+				width: 100%;
+			}
+			&__alex {
+				padding: 50px 0px;
+				width: 100%;
+			}
+			&__jim {
+				padding: 50px 0px;
+				width: 100%;
+			}
+		}
+		& h2 {
+			position: static;
+			color: var(--color1);
+			margin-bottom: 20px; 
+		}
+	}
+
+	.footer {
+		margin-top: -200px;
+
+		& .boxForm {
+			width: 95%;
+
+			& input {
+				width: 100%;
+			}
+			& textarea {
+				width: 100%;				
+			}
+			& h2 {
+				font-size: 40px;
+			} 
+		}
+	}
+}
+
+@media only screen and (max-width: 700px){
+	.about-img {
+		width: 100%;
+		height: 500px;
+	}
+	.about-us {
+		& left {
+			width: 100%; 
+			display: block;
+
+			&.info {
+				margin-bottom: 30px;
+			}
+		}
+		& right {
+			width: 100%; 
+			display: block;
+
+			&.info {
+				margin-top: 30px;
+			}
+		}
+		& .info {
+			width: 100%; 
+		}
+	}
+	.content-card .card {
+		width: 100%;
+		height: 400px;
+	}
+	footer .boxForm {
+		width: 90%;
+
+		& input,  {
+			height: 50px;
+			width: 100%;
+		}
+		& textarea {
+			width: 100%;
+		}
+	}
+
+}
+
+
+
+
+
+
